@@ -1,0 +1,83 @@
+baseURL = "https://amao.run/"
+theme = "anatole"
+defaultContentLanguage = "zh"
+
+[params]
+author = "Amao Three"
+profilePicture = "images/profile.jpg"
+copyright = "2019-2021"
+gtagId = "G-4GTD2DHRN1"
+
+
+
+[languages]
+  [languages.zh]
+    languageCode = "zh-cn"
+    languageName = "中文"
+    description = "天下有大勇者，卒然临之而不惊，无故加之而不怒；此其所挟持者甚大，而其志甚远也。--苏轼"
+    title = "阿毛的随便写写"
+    weight = 1
+    contentDir = "content/zh"
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "EN"
+    languageCode = "en-us"
+    weight = 2
+    title = "Amao's Casual Writing"
+    description = "There are great brave people in the world, and they are not frightened when they are faced with a sudden attack, and they are not angry when they are added for no reason; the person who holds this is very powerful, and his ambition is very distant. --Su Shi"
+  
+
+[menu]
+  [[languages.zh.menu.main]]
+    url    = "/zh/"
+    identifier = "home"
+    name   = "主页"
+    weight = 100
+  [[languages.zh.menu.main]]
+    url    = "/zh/posts/"
+    identifier = "posts"
+    name   = "文章"
+    weight = 200
+  [[languages.zh.menu.main]]
+    url    = "/zh/about/"
+    identifier = "about"
+    name   = "关于我"
+    weight = 300
+
+  [[languages.en.menu.main]]
+    url    = "/en/"
+    identifier = "home"
+    name   = "Home"
+    weight = 100
+  [[languages.en.menu.main]]
+    url    = "/en/posts/"
+    identifier = "posts"
+    name   = "Posts"
+    weight = 200
+  [[languages.en.menu.main]]
+    url    = "/en/about/"
+    identifier = "about"
+    name   = "About"
+    weight = 300
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+  [[params.socialIcons]]
+  icon = "fab fa-linkedin"
+  title = "Linkedin"
+  url = "https://www.linkedin.com/in/yuehao-sui/"
+
+  [[params.socialIcons]]
+  icon = "fab fa-github"
+  title = "GitHub"
+  url = "https://github.com/amaothree"
+
+  [[params.socialIcons]]
+  icon = "fab fa-instagram"
+  title = "instagram"
+  url = "https://www.instagram.com/yoohoo.samuel/"
+
+  [[params.socialIcons]]
+  icon = "fas fa-envelope"
+  title = "e-mail"
+  url = "mailto:ihidemyname@outlook.com"
