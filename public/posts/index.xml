@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 阿毛的随便写写</title>
-    <link>https://amao.run/posts/</link>
+    <link>https://amaothree.github.io/posts/</link>
     <description>Recent content in Posts on 阿毛的随便写写</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 01 Oct 2020 01:41:53 +0000</lastBuildDate><atom:link href="https://amao.run/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 01:41:53 +0000</lastBuildDate><atom:link href="https://amaothree.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>瑞典ICA学生银行卡办理激活教程</title>
-      <link>https://amao.run/posts/%E7%91%9E%E5%85%B8ica%E5%AD%A6%E7%94%9F%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8A%9E%E7%90%86%E6%BF%80%E6%B4%BB%E6%95%99%E7%A8%8B/</link>
+      <link>https://amaothree.github.io/posts/%E7%91%9E%E5%85%B8ica%E5%AD%A6%E7%94%9F%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8A%9E%E7%90%86%E6%BF%80%E6%B4%BB%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 01 Oct 2020 01:41:53 +0000</pubDate>
       
-      <guid>https://amao.run/posts/%E7%91%9E%E5%85%B8ica%E5%AD%A6%E7%94%9F%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8A%9E%E7%90%86%E6%BF%80%E6%B4%BB%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://amaothree.github.io/posts/%E7%91%9E%E5%85%B8ica%E5%AD%A6%E7%94%9F%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%8A%9E%E7%90%86%E6%BF%80%E6%B4%BB%E6%95%99%E7%A8%8B/</guid>
       <description>&lt;h2 id=&#34;0x00-前言&#34;&gt;0x00 前言&lt;/h2&gt;
 &lt;p&gt;ICA学生卡的好处还挺多，办理方便，存取钱方便，免除一切管理费，ICA购物积分优惠也尽享，国际转账也不成问题。而最近群内问ICA银行卡问题的人也多了，我这人也生性懒惰，一遍一遍解释实乃非我风格，故写下此教程文为朋友答疑解惑。&lt;/p&gt;
 &lt;p&gt;本文按照流程分为申请，激活，使用三个部分，请大家按需使用。&lt;/p&gt;
@@ -22,31 +22,31 @@
     
     <item>
       <title>回到Windows，最全教程让你的Powershell更好看且好用</title>
-      <link>https://amao.run/posts/%E5%9B%9E%E5%88%B0windows%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/</link>
+      <link>https://amaothree.github.io/posts/%E5%9B%9E%E5%88%B0windows%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/</link>
       <pubDate>Fri, 05 Jun 2020 15:18:02 +0000</pubDate>
       
-      <guid>https://amao.run/posts/%E5%9B%9E%E5%88%B0windows%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://amao.run/images/%E5%9B%9E%E5%88%B0Windows%EF%BC%8C%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/screenshot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <guid>https://amaothree.github.io/posts/%E5%9B%9E%E5%88%B0windows%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://amaothree.github.io/images/%E5%9B%9E%E5%88%B0Windows%EF%BC%8C%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/screenshot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x00-前言&#34;&gt;0x00 前言&lt;/h2&gt;
 &lt;p&gt;从ArchLinux退烧（现在是低烧状态，还是非常非常喜欢Arch的）回坑Windows 10后，因为有了两年多的Gnome以及Kde的使用经验后，回来其实发现Windows的UI设计并没有那么的不堪，甚至是有很多可取之处的。可能只是之前用了太久反而会唾弃之吧。再加上这几年微软开始拥抱开源并且回馈开源，有很多好的项目都提出来了并且已经release了，因此我对微软的态度也来了个大转变，现在日常生活生态和撸代码环境也都往微软生态上转移了（365真香！）。我先用了半年的win10，从1903到现在的2004，对微软的设计稍微有了些自己的见解后，便将一些能够极大提升使用体验的小方法写了出来。正好最近入手了一个二手Surface Pro买来学习用和轻办公，正好借着这个机会从头到尾的写一篇美化Powershell的教程，也算是备忘用。最终效果应当如头图（头图是我的主力机上之前截下来的旧图）。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>东方同人乐推荐交响篇-交响ActiveNEETs</title>
-      <link>https://amao.run/posts/%E6%AD%A4%E7%94%9F%E6%97%A0%E6%82%94%E5%85%A5%E4%B8%9C%E6%96%B9/</link>
+      <link>https://amaothree.github.io/posts/%E6%AD%A4%E7%94%9F%E6%97%A0%E6%82%94%E5%85%A5%E4%B8%9C%E6%96%B9/</link>
       <pubDate>Mon, 03 Feb 2020 01:03:04 +0000</pubDate>
       
-      <guid>https://amao.run/posts/%E6%AD%A4%E7%94%9F%E6%97%A0%E6%82%94%E5%85%A5%E4%B8%9C%E6%96%B9/</guid>
+      <guid>https://amaothree.github.io/posts/%E6%AD%A4%E7%94%9F%E6%97%A0%E6%82%94%E5%85%A5%E4%B8%9C%E6%96%B9/</guid>
       <description>【东方】花映塚串烧【交响ActiveNEETs】 https://www.bilibili.com/video/av7722061
 这个同人社团可以说是大推，观其名便可知是做东方曲交响乐化的，但是这个社团啥都做，舰娘也是其另一个重要的系列。其每一个重新编曲的交响都恢宏大气，往往沉醉其中，而忘了手中的作业（x）。</description>
     </item>
     
     <item>
       <title>在ArchLinux下编译LineageOS16.0</title>
-      <link>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</link>
+      <link>https://amaothree.github.io/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</link>
       <pubDate>Sun, 15 Sep 2019 13:53:02 +0000</pubDate>
       
-      <guid>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</guid>
+      <guid>https://amaothree.github.io/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</guid>
       <description>&lt;h2 id=&#34;917更新&#34;&gt;9/17更新&lt;/h2&gt;
 &lt;p&gt;你依然可以通过本文进行其他类似机型的编译&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;本人实测小米6刷入编译出来的包会卡米，也就是卡在开机MI logo上，和一些dalao讨论貌似是小米部分机型与lineage自带的clang版本冲突。可能被波及了。等我XDA问完，这边再给可能的解决方案。&lt;/del&gt;&lt;/p&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>DDE下触控板手势修改</title>
-      <link>https://amao.run/posts/dde%E4%B8%8B%E8%A7%A6%E6%8E%A7%E6%9D%BF%E6%89%8B%E5%8A%BF%E4%BF%AE%E6%94%B9/</link>
+      <link>https://amaothree.github.io/posts/dde%E4%B8%8B%E8%A7%A6%E6%8E%A7%E6%9D%BF%E6%89%8B%E5%8A%BF%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Sun, 04 Aug 2019 19:42:22 +0000</pubDate>
       
-      <guid>https://amao.run/posts/dde%E4%B8%8B%E8%A7%A6%E6%8E%A7%E6%9D%BF%E6%89%8B%E5%8A%BF%E4%BF%AE%E6%94%B9/</guid>
+      <guid>https://amaothree.github.io/posts/dde%E4%B8%8B%E8%A7%A6%E6%8E%A7%E6%9D%BF%E6%89%8B%E5%8A%BF%E4%BF%AE%E6%94%B9/</guid>
       <description>&lt;p&gt;这个post比较短。只是起到备忘的操作。&lt;/p&gt;
 &lt;p&gt;因为我一直是arch+dde的使用环境，deepin还是有不少能吸引我的地方，就比方说开发组的坚持，以及良好的社区。&lt;/p&gt;
 &lt;p&gt;因为我一直习惯是触控板自然滚动，即两指向上为页面向下这样的。这一点可以再设置面板里面改，但是却仅限两指滚动。而四指左右滑切换桌面却还是正规的左右，想要变成自然滑动，需要额外做一下配置。&lt;/p&gt;</description>
@@ -71,10 +71,10 @@
     
     <item>
       <title>愿你为“幸运之星“-武本康弘</title>
-      <link>https://amao.run/posts/%E6%84%BF%E4%BD%A0%E4%B8%BA%E5%B9%B8%E8%BF%90%E4%B9%8B%E6%98%9F-%E6%AD%A6%E6%9C%AC%E5%BA%B7%E5%BC%98/</link>
+      <link>https://amaothree.github.io/posts/%E6%84%BF%E4%BD%A0%E4%B8%BA%E5%B9%B8%E8%BF%90%E4%B9%8B%E6%98%9F-%E6%AD%A6%E6%9C%AC%E5%BA%B7%E5%BC%98/</link>
       <pubDate>Wed, 24 Jul 2019 18:04:53 +0000</pubDate>
       
-      <guid>https://amao.run/posts/%E6%84%BF%E4%BD%A0%E4%B8%BA%E5%B9%B8%E8%BF%90%E4%B9%8B%E6%98%9F-%E6%AD%A6%E6%9C%AC%E5%BA%B7%E5%BC%98/</guid>
+      <guid>https://amaothree.github.io/posts/%E6%84%BF%E4%BD%A0%E4%B8%BA%E5%B9%B8%E8%BF%90%E4%B9%8B%E6%98%9F-%E6%AD%A6%E6%9C%AC%E5%BA%B7%E5%BC%98/</guid>
       <description>文/ 已经是一只大鸽子的阿毛
 “今日twitter上关于武本老师依旧没有新闻，我已不抱太大希望，老师你赶紧把手机充上电吧！”
 我出国之前特意把clannad（以及AS）带了出来。steam上也入了正。也算是在二次元方面给以前的我一个交代。
@@ -87,10 +87,10 @@
     
     <item>
       <title>Arch Linux 下两种推荐的bootloader（下）：rEFInd</title>
-      <link>https://amao.run/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Brefind/</link>
+      <link>https://amaothree.github.io/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Brefind/</link>
       <pubDate>Sun, 24 Mar 2019 19:39:53 +0000</pubDate>
       
-      <guid>https://amao.run/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Brefind/</guid>
+      <guid>https://amaothree.github.io/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Brefind/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://amaois.wang/2019/03/24/Arch-Linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9Asystemd-boot/&#34;&gt;上一篇&lt;/a&gt;介绍了如何安装systemd-boot，这一篇给大家介绍另个非热门的热门bootloader，也更好看的refind。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://camo.githubusercontent.com/999cff82d4bea54f222e165d647b5df597f45b86/687474703a2f2f692e696d6775722e636f6d2f33624d473655372e706e67&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -103,10 +103,10 @@
     
     <item>
       <title>Arch Linux 下两种推荐的bootloader（上）：systemd-boot</title>
-      <link>https://amao.run/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Asystemd-boot/</link>
+      <link>https://amaothree.github.io/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Asystemd-boot/</link>
       <pubDate>Sun, 24 Mar 2019 18:43:46 +0000</pubDate>
       
-      <guid>https://amao.run/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Asystemd-boot/</guid>
+      <guid>https://amaothree.github.io/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Asystemd-boot/</guid>
       <description>&lt;p&gt;维持一个博客还是蛮难的，并不是说服务器的维护，而是说更新博文。&lt;/p&gt;
 &lt;p&gt;周更的Flag很快就倒了，一是说这一段时间学校的B事实在是太多，自己也不太争气。二是说，自己也不知道要写一些什么好，我还是太弱了，什么都不精通，了解的也少。&lt;/p&gt;
 &lt;p&gt;不过最近正好安装了rEFInd用来替代之前一直用的systemd-boot，就一并介绍了。&lt;/p&gt;
@@ -115,10 +115,10 @@
     
     <item>
       <title>Hexo 备份手记</title>
-      <link>https://amao.run/posts/hexo-%E5%A4%87%E4%BB%BD%E6%89%8B%E8%AE%B0/</link>
+      <link>https://amaothree.github.io/posts/hexo-%E5%A4%87%E4%BB%BD%E6%89%8B%E8%AE%B0/</link>
       <pubDate>Fri, 15 Feb 2019 10:11:34 +0000</pubDate>
       
-      <guid>https://amao.run/posts/hexo-%E5%A4%87%E4%BB%BD%E6%89%8B%E8%AE%B0/</guid>
+      <guid>https://amaothree.github.io/posts/hexo-%E5%A4%87%E4%BB%BD%E6%89%8B%E8%AE%B0/</guid>
       <description>&lt;p&gt;由于hexo只是将生成的静态页面推到github的io仓库里，这就导致了，如果你有一天想要异地更新博客，或者换机后也能更新博客，就必须要将本地的框架做数据备份，否则一旦丢失，是非常头疼的问题，99%是不能恢复成以前的博客了。&lt;/p&gt;
 &lt;p&gt;做数据备份，往往都是物理上的或者云上的。物理上的便是复制整个文件夹到移动硬盘或者U盘随身带着。这些东西我并不少，但是总是个累赘，还有物理上的可能性损伤造成的数据丢失。或者就放到某个云盘上，还可以自动同步，只可惜作为ArchLinux为主系统的用户，本人常用的onedrive并不在该系统上提供官方服务，第三方的bin也无法做的实时检测文件更新并同步。&lt;/p&gt;
 &lt;p&gt;那么既然自动化无望，无论如何都要定期手动备份，那我还是将整体作为项目放到github的仓库里吧。下边便是我做成之后写下的记录，也算是分享（虽然网上也是一大把这种教程）。&lt;/p&gt;</description>
@@ -126,10 +126,10 @@
     
     <item>
       <title>年前寒假总结-（美赛以及实习）</title>
-      <link>https://amao.run/posts/%E5%B9%B4%E5%89%8D%E5%AF%92%E5%81%87%E6%80%BB%E7%BB%93-%E7%BE%8E%E8%B5%9B%E4%BB%A5%E5%8F%8A%E5%AE%9E%E4%B9%A0/</link>
+      <link>https://amaothree.github.io/posts/%E5%B9%B4%E5%89%8D%E5%AF%92%E5%81%87%E6%80%BB%E7%BB%93-%E7%BE%8E%E8%B5%9B%E4%BB%A5%E5%8F%8A%E5%AE%9E%E4%B9%A0/</link>
       <pubDate>Wed, 30 Jan 2019 22:27:54 +0000</pubDate>
       
-      <guid>https://amao.run/posts/%E5%B9%B4%E5%89%8D%E5%AF%92%E5%81%87%E6%80%BB%E7%BB%93-%E7%BE%8E%E8%B5%9B%E4%BB%A5%E5%8F%8A%E5%AE%9E%E4%B9%A0/</guid>
+      <guid>https://amaothree.github.io/posts/%E5%B9%B4%E5%89%8D%E5%AF%92%E5%81%87%E6%80%BB%E7%BB%93-%E7%BE%8E%E8%B5%9B%E4%BB%A5%E5%8F%8A%E5%AE%9E%E4%B9%A0/</guid>
       <description>&lt;p&gt;昨天结束了美赛，明天我就要回家啦！&lt;/p&gt;
 &lt;p&gt;休息了一整天，睡前发一下博客总结回味一下这半个月的年前寒假。&lt;/p&gt;</description>
     </item>

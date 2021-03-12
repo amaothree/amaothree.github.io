@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Amao&#39;s Casual Writing</title>
-    <link>https://amao.run/en/</link>
+    <link>https://amaothree.github.io/en/</link>
     <description>Recent content on Amao&#39;s Casual Writing</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://amao.run/en/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://amaothree.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WHOIAM</title>
-      <link>https://amao.run/en/about/</link>
+      <link>https://amaothree.github.io/en/about/</link>
       <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://amao.run/en/about/</guid>
+      <guid>https://amaothree.github.io/en/about/</guid>
       <description>I am working for Master degree of Distributed Systems in KTH Royal Institute of Technology.
 I am a believer of Arch Linux, I dare not presume to say I am well-known Linux, I had used Arch Linux as the only systemd for 3 years, then I switch back to the Microsoft camp after Microsoft began to do right things. Now I work on Arch Linux as WSL and a plan b system.</description>
     </item>

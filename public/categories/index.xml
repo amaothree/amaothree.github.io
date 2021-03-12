@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 阿毛的随便写写</title>
-    <link>https://amao.run/categories/</link>
+    <link>https://amaothree.github.io/categories/</link>
     <description>Recent content in Categories on 阿毛的随便写写</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://amao.run/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://amaothree.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

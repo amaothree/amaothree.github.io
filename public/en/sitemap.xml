@@ -2,53 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://amao.run/en/about/</loc>
+    <loc>https://amaothree.github.io/en/about/</loc>
     <lastmod>2021-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://amao.run/about/"
+                href="https://amaothree.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://amao.run/en/about/"
+                href="https://amaothree.github.io/en/about/"
                 />
   </url><url>
-    <loc>https://amao.run/en/</loc>
+    <loc>https://amaothree.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://amao.run/"
+                href="https://amaothree.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://amao.run/en/"
+                href="https://amaothree.github.io/en/"
                 />
   </url><url>
-    <loc>https://amao.run/en/categories/</loc>
+    <loc>https://amaothree.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://amao.run/categories/"
+                href="https://amaothree.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://amao.run/en/categories/"
+                href="https://amaothree.github.io/en/categories/"
                 />
   </url><url>
-    <loc>https://amao.run/en/tags/</loc>
+    <loc>https://amaothree.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://amao.run/tags/"
+                href="https://amaothree.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://amao.run/en/tags/"
+                href="https://amaothree.github.io/en/tags/"
                 />
   </url>
 </urlset>
