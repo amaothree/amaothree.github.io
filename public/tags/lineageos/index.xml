@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LineageOS on 阿毛的随便写写</title>
-    <link>https://amaothree.github.io/tags/lineageos/</link>
+    <link>https://amao.run/tags/lineageos/</link>
     <description>Recent content in LineageOS on 阿毛的随便写写</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Sep 2019 13:53:02 +0000</lastBuildDate><atom:link href="https://amaothree.github.io/tags/lineageos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Sep 2019 13:53:02 +0000</lastBuildDate><atom:link href="https://amao.run/tags/lineageos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在ArchLinux下编译LineageOS16.0</title>
-      <link>https://amaothree.github.io/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</link>
+      <link>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</link>
       <pubDate>Sun, 15 Sep 2019 13:53:02 +0000</pubDate>
       
-      <guid>https://amaothree.github.io/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</guid>
+      <guid>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</guid>
       <description>&lt;h2 id=&#34;917更新&#34;&gt;9/17更新&lt;/h2&gt;
 &lt;p&gt;你依然可以通过本文进行其他类似机型的编译&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;本人实测小米6刷入编译出来的包会卡米，也就是卡在开机MI logo上，和一些dalao讨论貌似是小米部分机型与lineage自带的clang版本冲突。可能被波及了。等我XDA问完，这边再给可能的解决方案。&lt;/del&gt;&lt;/p&gt;

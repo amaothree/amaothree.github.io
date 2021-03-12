@@ -7,7 +7,7 @@ author = "Amao Three"
 profilePicture = "images/profile.jpg"
 copyright = "2019-2021"
 gtagId = "G-4GTD2DHRN1"
-
+favicon = "favicons/"
 
 
 [languages]
@@ -52,7 +52,7 @@ gtagId = "G-4GTD2DHRN1"
   [[languages.en.menu.main]]
     url    = "/en/posts/"
     identifier = "posts"
-    name   = "Posts"
+    name   = "posts"
     weight = 200
   [[languages.en.menu.main]]
     url    = "/en/about/"
