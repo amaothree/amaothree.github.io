@@ -1,9 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LineageOS on 阿毛的随便写写</title><link>https://amao.run/tags/lineageos/</link><description>Recent content in LineageOS on 阿毛的随便写写</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 15 Sep 2019 13:53:02 +0000</lastBuildDate><atom:link href="https://amao.run/tags/lineageos/index.xml" rel="self" type="application/rss+xml"/><item><title>在ArchLinux下编译LineageOS16.0</title><link>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</link><pubDate>Sun, 15 Sep 2019 13:53:02 +0000</pubDate><guid>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</guid><description>&lt;h2 id="917更新">9/17更新&lt;/h2>
-&lt;p>你依然可以通过本文进行其他类似机型的编译&lt;/p>
-&lt;p>&lt;del>本人实测小米6刷入编译出来的包会卡米，也就是卡在开机MI logo上，和一些dalao讨论貌似是小米部分机型与lineage自带的clang版本冲突。可能被波及了。等我XDA问完，这边再给可能的解决方案。&lt;/del>&lt;/p>
-&lt;p>就在我痛苦不堪的时候，发现LOS团队&lt;a href="https://github.com/LineageOS/hudson/commit/9e0206569670a2566562e000b9f1e3492eacca83">悄悄把小米部分机型恢复了。&lt;/a>&lt;/p>
-&lt;p>怕折腾的，还是刷官方包吧。&lt;/p>
-&lt;hr>
-&lt;h2 id="0x00-背景事件">0x00 背景事件&lt;/h2>
-&lt;p>8月9日，北京商汤在github上提交了&lt;a href="https://github.com/github/dmca/blob/master/2019/08/2019-08-09-SenseTime-5.md">DMCA投诉&lt;/a>，因为自家授权给小米的面部解锁专利被“开源”，故请求github删除“涉案”的454个repo，这其中主要提及到了TheMuppets团队一直维护的&lt;a href="https://github.com/TheMuppets/proprietary_vendor_xiaomi">小米vendor仓库&lt;/a>。这个仓库也是LineageOS团队（以下简称为LOS）一直依赖（合作）的vendor源。因为这个事件，LOS团队停止了8月8号之后的xiaomi机型的所有offical的ROM编译工作。截止本post编写时，工作依然没有恢复。官网版本一直停留在0808-nightly上。&lt;/p>
-&lt;p>作者正是LOS16的用户，这个类原生OS一直给我带来很好的用户体验。但是不幸的是0808版本遗留下了微信QQ等网络电话APP无法获取录音权限的问题，虽然社区很快接收到了反馈并做了patch。但是因为DMCA事件导致我们现在无法收到OTA更新了。现在和父母以及同学交流非常不便，只能回到宿舍使用ipad打电话。1个月后感觉DMCA事件没有什么解决进展，被逼无奈的我只好自己动手编译最新代码。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LineageOS on 阿毛的随便写写</title>
+    <link>https://amao.run/tags/lineageos/</link>
+    <description>Recent content in LineageOS on 阿毛的随便写写</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Sep 2019 13:53:02 +0000</lastBuildDate><atom:link href="https://amao.run/tags/lineageos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在ArchLinux下编译LineageOS16.0</title>
+      <link>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</link>
+      <pubDate>Sun, 15 Sep 2019 13:53:02 +0000</pubDate>
+      
+      <guid>https://amao.run/posts/%E5%9C%A8archlinux%E4%B8%8B%E7%BC%96%E8%AF%91lineageos16-0/</guid>
+      <description>&lt;h2 id=&#34;917更新&#34;&gt;9/17更新&lt;/h2&gt;
+&lt;p&gt;你依然可以通过本文进行其他类似机型的编译&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;本人实测小米6刷入编译出来的包会卡米，也就是卡在开机MI logo上，和一些dalao讨论貌似是小米部分机型与lineage自带的clang版本冲突。可能被波及了。等我XDA问完，这边再给可能的解决方案。&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;就在我痛苦不堪的时候，发现LOS团队&lt;a href=&#34;https://github.com/LineageOS/hudson/commit/9e0206569670a2566562e000b9f1e3492eacca83&#34;&gt;悄悄把小米部分机型恢复了。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;怕折腾的，还是刷官方包吧。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;0x00-背景事件&#34;&gt;0x00 背景事件&lt;/h2&gt;
+&lt;p&gt;8月9日，北京商汤在github上提交了&lt;a href=&#34;https://github.com/github/dmca/blob/master/2019/08/2019-08-09-SenseTime-5.md&#34;&gt;DMCA投诉&lt;/a&gt;，因为自家授权给小米的面部解锁专利被“开源”，故请求github删除“涉案”的454个repo，这其中主要提及到了TheMuppets团队一直维护的&lt;a href=&#34;https://github.com/TheMuppets/proprietary_vendor_xiaomi&#34;&gt;小米vendor仓库&lt;/a&gt;。这个仓库也是LineageOS团队（以下简称为LOS）一直依赖（合作）的vendor源。因为这个事件，LOS团队停止了8月8号之后的xiaomi机型的所有offical的ROM编译工作。截止本post编写时，工作依然没有恢复。官网版本一直停留在0808-nightly上。&lt;/p&gt;
+&lt;p&gt;作者正是LOS16的用户，这个类原生OS一直给我带来很好的用户体验。但是不幸的是0808版本遗留下了微信QQ等网络电话APP无法获取录音权限的问题，虽然社区很快接收到了反馈并做了patch。但是因为DMCA事件导致我们现在无法收到OTA更新了。现在和父母以及同学交流非常不便，只能回到宿舍使用ipad打电话。1个月后感觉DMCA事件没有什么解决进展，被逼无奈的我只好自己动手编译最新代码。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

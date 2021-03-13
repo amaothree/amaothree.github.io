@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on 阿毛的随便写写</title>
+    <link>https://amao.run/tags/index/</link>
+    <description>Recent content in index on 阿毛的随便写写</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://amao.run/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts</title>
+      <link>https://amao.run/posts/</link>
+      <pubDate>Thu, 01 Oct 2020 01:41:53 +0000</pubDate>
+      
+      <guid>https://amao.run/posts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
