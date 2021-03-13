@@ -1,6 +1,7 @@
 baseURL = "https://amao.run/"
 theme = "anatole"
 defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
 
 [params]
 author = "Amao Three"
@@ -8,7 +9,7 @@ profilePicture = "images/profile.jpg"
 copyright = "2019-2021"
 gtagId = "G-4GTD2DHRN1"
 favicon = "favicons/"
-
+mainSections = ["posts"]
 
 [languages]
   [languages.zh]

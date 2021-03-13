@@ -169,5 +169,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>index</title>
+      <link>https://amao.run/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://amao.run/tags/index/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

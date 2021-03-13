@@ -39,6 +39,30 @@
                 href="https://amao.run/en/categories/"
                 />
   </url><url>
+    <loc>https://amao.run/en/tags/index/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://amao.run/tags/index/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://amao.run/en/tags/index/"
+                />
+  </url><url>
+    <loc>https://amao.run/en/posts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://amao.run/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://amao.run/en/posts/"
+                />
+  </url><url>
     <loc>https://amao.run/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
