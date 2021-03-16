@@ -7,7 +7,7 @@ tags:
 - Geek
 ---
 
-[上一篇](https://amaois.wang/2019/03/24/Arch-Linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9Asystemd-boot/)介绍了如何安装systemd-boot，这一篇给大家介绍另个非热门的热门bootloader，也更好看的refind。
+[上一篇](https://amao.run/zh/posts/arch-linux-%E4%B8%8B%E4%B8%A4%E7%A7%8D%E6%8E%A8%E8%8D%90%E7%9A%84bootloader%E4%B8%8Asystemd-boot/)介绍了如何安装systemd-boot，这一篇给大家介绍另个非热门的热门bootloader，也更好看的refind。
 
 ![](https://camo.githubusercontent.com/999cff82d4bea54f222e165d647b5df597f45b86/687474703a2f2f692e696d6775722e636f6d2f33624d473655372e706e67)
 
