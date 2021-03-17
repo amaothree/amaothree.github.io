@@ -11,6 +11,12 @@ gtagId = "G-4GTD2DHRN1"
 favicon = "favicons/"
 mainSections = ["posts"]
 
+[params.utterances]
+repo = "amaothree/gitalk-repo"
+issueTerm = "github-dark-orange"
+theme= "preferred-color-scheme"
+# label = 
+
 [languages]
   [languages.zh]
     languageCode = "zh-cn"
