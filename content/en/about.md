@@ -15,3 +15,5 @@ I was a crazy fun of Touhou Project. My favorite animation is CLANNAD and EVA. C
 I believe Rust is the mainstream language of the future, and also I'm trying to learn TypeScript, but since my major is distributed, I usually use some functional languages like Scala and Erlang in my classes (but honestly, functional thinking is really killing me, I hate FP).
 
 In fact, my dream is to be an independent game developer, because I think only games is a good carrier which is not limited by materials or screens, is the best way to tell stories and present art. I want to share stories in my heart to everyone, and I hope to tell good 9th art like those that have ever touched me.
+
+I can speak English but not fluently.
