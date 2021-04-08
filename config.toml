@@ -9,7 +9,7 @@ profilePicture = "images/profile.jpg"
 copyright = "2019-2021"
 gtagId = "G-4GTD2DHRN1"
 favicon = "favicons/"
-mainSections = ["posts"]
+mainSections = ["post"]
 
 [params.utterances]
 repo = "amaothree/gitalk-repo"
