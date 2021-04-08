@@ -13,8 +13,8 @@ mainSections = ["posts"]
 
 [params.utterances]
 repo = "amaothree/gitalk-repo"
-issueTerm = "github-dark-orange"
-theme= "preferred-color-scheme"
+issueTerm = "title"
+theme= "github-dark-orange"
 # label = 
 
 [languages]
