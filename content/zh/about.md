@@ -4,6 +4,7 @@ description: "分布式小学生"
 date: 2021-03-11
 aliases: ["about-me", "contact"]
 author: "Amao Three"
+type: about
 ---
 
 KTH分布式系统专业硕士在读

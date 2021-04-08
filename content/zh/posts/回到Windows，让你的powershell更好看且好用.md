@@ -1,6 +1,7 @@
 ---
 title: 回到Windows，最全教程让你的Powershell更好看且好用
 date: 2020-06-05 15:18:02
+type: post
 tags:
 - Geek
 - Windows

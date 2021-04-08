@@ -1,6 +1,7 @@
 ---
 title: Arch Linux 下两种推荐的bootloader（下）：rEFInd
 date: 2019-03-24 19:39:53
+type: post
 tags:
 - Arch
 - EFI

@@ -4,6 +4,7 @@ description: "Distributed Student"
 date: 2021-03-11
 aliases: ["about-me", "contact"]
 author: "Amao Three"
+type: about
 ---
 
 I am studying for Master degree of Distributed Systems in KTH Royal Institute of Technology.

@@ -1,6 +1,7 @@
 ---
 title: 在ArchLinux下编译LineageOS16.0
 date: 2019-09-15 13:53:02
+type: post
 tags:
 - Android
 - LineageOS

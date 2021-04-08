@@ -1,6 +1,7 @@
 ---
 title: DDE下触控板手势修改
 date: 2019-08-04 19:42:22
+type: post
 tags:
 - dde
 - Geek

@@ -1,6 +1,7 @@
 ---
 title: 瑞典ICA学生银行卡办理激活教程
 date: 2020-10-01 01:41:53
+type: post
 tags:
 ---
 

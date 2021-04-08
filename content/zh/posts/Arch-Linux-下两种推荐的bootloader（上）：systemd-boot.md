@@ -1,6 +1,7 @@
 ---
 title: Arch Linux 下两种推荐的bootloader（上）：systemd-boot
 date: 2019-03-24 18:43:46
+type: post
 tags: 
 - Arch
 - EFI
