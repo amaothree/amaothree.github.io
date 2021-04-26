@@ -2,6 +2,10 @@
 title: "Creat multi Jenkins containers in Windows Subsystem for Linux based on systemd-nspawn"
 date: 2021-04-16T11:31:05+01:00
 type: post
+tags: 
+- Linux
+- DevOps
+- WSL
 ---
 
 ## 0x01 Introduction

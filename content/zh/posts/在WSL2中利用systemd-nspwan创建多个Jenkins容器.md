@@ -2,6 +2,10 @@
 title: "在WSL2中利用Systemd-nspwan创建多个Jenkins容器"
 date: 2021-04-26T19:37:06+02:00
 type: post
+tags: 
+- Linux
+- DevOps
+- WSL
 ---
 
 ## 0x01 简介
