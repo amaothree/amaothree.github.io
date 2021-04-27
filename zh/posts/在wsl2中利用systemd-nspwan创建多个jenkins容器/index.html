@@ -51,7 +51,7 @@ Container1 container systemd-nspawn arch -       -
 Container2 container systemd-nspawn arch -       -
 
 <span style=color:#ae81ff>2</span> machines listed.
-</code></pre></div><p>然后根据不同的需要分别进入不同容器进行不同的配置就可以了。比如修改Container2中Jenkins的端口号。之后你就可以通过你的Windows上的浏览器访问不同端口来控制不同的Jenkins。</p><h2 id=0x04-打包容器>0x04 打包容器</h2><p>如果你想将容器转移到你的另一台主机上，你当然也可以随时用<code>machinectl</code>命令打包导出容器。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Export</span>
+</code></pre></div><p>然后根据不同的需要分别进入不同容器进行不同的配置就可以了。比如修改Container2中Jenkins的端口号。之后你就可以通过你的Windows上的浏览器访问不同端口来控制不同的Jenkins。</p><h2 id=0x05-打包容器>0x05 打包容器</h2><p>如果你想将容器转移到你的另一台主机上，你当然也可以随时用<code>machinectl</code>命令打包导出容器。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Export</span>
 sudo machinectl export-tar Container1 /home/username/Container1.gz
 <span style=color:#75715e># Import</span>
 sudo machinectl import-tar /home/username/Container1.gz ContainerX

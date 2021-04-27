@@ -55,7 +55,7 @@ Container1 container systemd-nspawn arch -       -
 Container2 container systemd-nspawn arch -       -
 
 <span style=color:#ae81ff>2</span> machines listed.
-</code></pre></div><p>Then just go into different containers for different configurations according to different needs. For example, change the port number of Jenkins in Container2. After that you can access different ports to control different Jenkins through your browser on Windows.</p><h2 id=0x04-packing-containers>0x04 Packing containers</h2><p>If you want to move the container to your other host, you can of course always package and export the container with the <code>machinectl</code> command.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Export</span>
+</code></pre></div><p>Then just go into different containers for different configurations according to different needs. For example, change the port number of Jenkins in Container2. After that you can access different ports to control different Jenkins through your browser on Windows.</p><h2 id=0x05-packing-containers>0x05 Packing containers</h2><p>If you want to move the container to your other host, you can of course always package and export the container with the <code>machinectl</code> command.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e># Export</span>
 sudo machinectl export-tar Container1 /home/username/Container1.gz
 <span style=color:#75715e># Import</span>
 sudo machinectl import-tar /home/username/Container1.gz ContainerX
