@@ -16,6 +16,15 @@ This tutorial is quite generic. Although the name of this article relates to WSL
 
 <!--more-->
 
+I also write an executable script to help you learning the totural.
+You can download and run it:
+
+```bash
+curl -o totural.sh https://gist.githubusercontent.com/amaothree/d8bac64e5225b15db84aaf8e3aa6e08d/raw/fdff92ffddac8626584ad823a3b01ce0795c9f4a/totural.
+chmod +x ./totural.sh
+./totural.sh
+```
+
 ## 0x02 Preparation
 
 ### 1. Install WSL2
