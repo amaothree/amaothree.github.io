@@ -195,7 +195,7 @@ Once you are logged into the container, you can use the package manager to insta
 # Update all packages
 pacman -Syu
 # Install packages
-pacman -S nano bash-completion jdk-openjdk jenkins xorg
+pacman -S nano bash-completion jdk-openjdk jenkins xorg sl
 ```
 
 Before starting jenkins, give enough permissions on /var/cache/jenkins in the container
@@ -283,3 +283,4 @@ sudo machinectl import-tar /home/username/Container1.gz ContainerX
 You can check the progress with `machinectl list-transfers` and cancel with `machinectl cancel-transfer` at any time during the import and export process.
 
 Thanks for your reading.
+> Easter egg for you. If you really follow the commands. Try to run `sl` in Container1.
