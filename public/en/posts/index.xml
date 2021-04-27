@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 16 Apr 2021 11:31:05 +0100</lastBuildDate><atom:link href="https://amao.run/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creat multi Jenkins containers in Windows Subsystem for Linux based on systemd-nspawn</title>
-      <link>https://amao.run/en/posts/wsl/</link>
+      <link>https://amao.run/en/posts/systemd-nspwan/</link>
       <pubDate>Fri, 16 Apr 2021 11:31:05 +0100</pubDate>
       
-      <guid>https://amao.run/en/posts/wsl/</guid>
+      <guid>https://amao.run/en/posts/systemd-nspwan/</guid>
       <description>&lt;h2 id=&#34;0x01-introduction&#34;&gt;0x01 Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will describe how to create multiple isolated containers in WSL2 and run multiple Jenkins in them using Systemd-nspwan container technology.&lt;/p&gt;
 &lt;p&gt;This tutorial is quite generic. Although the name of this article relates to WSL2, most of the operations which follow will work perfectly well on any Linux distribution that uses Systemd ( and will not require any of the operations in the next section, &amp;ldquo;Preparation&amp;rdquo; ). Only minor modifications are required depending on the specific distribution (e.g. the difference in package managers and container systems).&lt;/p&gt;</description>
