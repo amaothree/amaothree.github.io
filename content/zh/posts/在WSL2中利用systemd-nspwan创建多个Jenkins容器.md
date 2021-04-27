@@ -265,7 +265,7 @@ Container2 container systemd-nspawn arch -       -
 
 然后根据不同的需要分别进入不同容器进行不同的配置就可以了。比如修改Container2中Jenkins的端口号。之后你就可以通过你的Windows上的浏览器访问不同端口来控制不同的Jenkins。
 
-## 0x04 打包容器
+## 0x05 打包容器
 
 如果你想将容器转移到你的另一台主机上，你当然也可以随时用`machinectl`命令打包导出容器。
 
