@@ -97,7 +97,6 @@
                 />
   </url><url>
     <loc>https://amao.run/en/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -108,23 +107,5 @@
                 hreflang="en"
                 href="https://amao.run/en/categories/"
                 />
-  </url><url>
-    <loc>https://amao.run/en/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amao.run/en/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amao.run/en/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amao.run/en/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amao.run/en/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amao.run/en/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
 </urlset>

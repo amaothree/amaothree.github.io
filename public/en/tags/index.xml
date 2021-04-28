@@ -34,32 +34,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>css</title>
-      <link>https://amao.run/en/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://amao.run/en/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://amao.run/en/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://amao.run/en/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://amao.run/en/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://amao.run/en/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
