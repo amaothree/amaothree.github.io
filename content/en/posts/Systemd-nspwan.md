@@ -131,8 +131,6 @@ sudo pacman -Syyu arch-install-scripts
 # Debian buster or higher/Ubuntu 18.04LTS or higher
 sudo apt update
 sudo apt install arch-install-scripts
-sudo pacman-key --init
-sudo pacman-key --populate archlinux
 # Fedora
 sudo dnf install arch-install-scripts
 sudo pacman-key --init
