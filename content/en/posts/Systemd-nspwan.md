@@ -1,5 +1,5 @@
 ---
-title: "Creat multi Jenkins containers in Windows Subsystem for Linux based on systemd-nspawn"
+title: "Creat multi Jenkins containers in Linux based on systemd-nspawn"
 date: 2021-04-16T11:31:05+01:00
 type: post
 tags: 
@@ -8,11 +8,9 @@ tags:
 - WSL
 ---
 
-## 0x01 Introduction
+## 0x00 Introduction
 
-This tutorial will describe how to create multiple isolated containers in WSL2 and run multiple Jenkins in them using Systemd-nspwan container technology.
-
-This tutorial is quite generic. Although the name of this article relates to WSL2, most of the operations which follow will work perfectly well on any Linux distribution that uses Systemd ( and will not require any of the operations in the next section, "Preparation" ). Only minor modifications are required depending on the specific distribution (e.g. the difference in package managers and container systems).
+This tutorial will describe how to create multiple isolated containers in Linux and run multiple Jenkins in them using Systemd-nspwan container technology.
 
 <!--more-->
 
@@ -25,39 +23,69 @@ chmod +x ./totural.sh
 ./totural.sh
 ```
 
+## 0x01 Background
+
+This section will explain the terms that appear in this tutorial. This will help you to have a better understanding of this tutorial.
+
+### Linux
+
+Broadly refers to a free and open source operating system. In a narrow sense, it refers to the kernel of the Linux operating system. It is popular in computer science and other data processing fields because it can be freely used and modified and is supported by a complete set of runtime libraries.
+
+Different communities distribute versions of the Linux operating system based on the Linux kernel and self-selected software libraries. We call them Linux distributions. Famous distributions include Ubuntu, Debian, CentOS (discontinued), Arch Linux, etc.
+
+### WSL
+
+Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows 10. And in 2019, WSL 2 was announced, it is based on a a highly optimized subset of Hyper-V features. WSL2 introducing important changes such as a real Linux kernel.
+>If you're still confused, think of WSL2 as a small Linux virtual machine developed by Microsoft that is highly optimised for Windows 10 systems.
+
+### Systemd
+
+Systemd is the name of a set of system components under the Linux operating system, and it provides the functionality to manage systems and services.
+
+### Systemd-nspwan
+
+Systemd-nspawn is a container tool in systemd. It can be used to run commands or operating systems in a lightweight namespace container.
+
+Compared to Docker, Systemd-nspawn can only do process isolation (the feature of the namespace) but not resource isolation. Host-to-container or container-to-container processes do not affect each other. But without restrictions, containers and hosts are sharing the same resources (e.g. CPU processing power). Docker uses cgroups to enforce resource isolation (like namespace, cgroups are a part of the linux kernel).
+
+### Jenkins
+
+An famours open source automation server. With the help of many plugins, Jenkins can help developers automate the building and deploying of software projects.
+
 ## 0x02 Preparation
 
-### 1. Install WSL2
+Systemd is a toolset unique to linux systems. You must use the linux operating system to complete this operation.
 
-Compared to the first generation of WSL, the virtualization technology used in WSL2 makes it possible to use the Systemd toolchain, and the interactive integration of WSL2 with Windows 10 is beyond the usual virtual machines. Therefore, this article recommends trying WSL2 on Windows 10 systems as a first priority to meet the needs of Dev or Ops for Linux environments.
+### If you are a Linux user
 
-In this tutorial you can choose any WSL2 distribution, such as the officially supported Linux distributions: Ubuntu, Debian, openSUSE or Alpine, or other open source projects supported by developers such as ArchWSL.
+Please check that the distribution you are using uses systemd to manage your system by default and that the PID of systemd is 1.
 
-As a practical user and lover of Arch Linux, **I will choose the [ArchWSL project](https://github.com/yuk7/ArchWSL) as my next WSL2 distribution**.
+```bash
+# Run this command to check.
+$ ps -A | grep systemd
+# The output should include this line.
+1 ?        00:00:00 systemd
+```
+
+### If you are a macOS user
+
+You can run a modern linux distribution such as Ubuntu, Fedora or Arch Linux in a virtual machine.
+
+### If you are a Windows user
+
+You can run a modern linux distribution such as Ubuntu, Fedora or Arch Linux in a virtual machine.
+
+#### Or If you using Windows 10 Version 1903 or higher
+
+You can install **WSL2** (WSL 1 is not work in this totural).
 
 And for details on how to install WSL2, please read [Microsoft's official documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
-### 2. Install Genie
-
 Due to the design of WSL2, Systemd is not started with PID 1 by default in WSL2. This will cause that we basically can't use Systemd's functions properly. However, there is a small tool that can help us fix it very easily.
 
-This is Genie, and you can easily find installation packages for various package managers in [Genie's project repository](https://github.com/arkane-systems/genie#installation).
+This is Genie, to install it please follow this guide. [Genie's project repository](https://github.com/arkane-systems/genie#installation).
 
-Once installed in WSL2 you can start a "Genie mode" WSL shell directly in Powershell
-
-`wsl genie -c bash`
-
-Or switch in the WSL
-
-`genie -c bash`
-
-### 3. Install Windows Terminal (optional)
-
-It can be installed in the Microsoft Store, and works right out of the box. Highly recommended.
-
-## 0x03 Create our first Systemd-nspwan container
-
-### 0. **Enter the WSL shell in Genie mode**
+Once installed in WSL2 you can start a "Genie mode" WSL shell directly in Powershell. **Please note that all the commands that follow you should be executed within Genie mode shell.**
 
 * In Powershell
 
@@ -65,11 +93,13 @@ It can be installed in the Microsoft Store, and works right out of the box. High
 >wsl genie -c bash
 >```
 
-* Or，In WSL
+* Or，In WSL bash
 
 >```Bash  
 >genie -c bash
 >```
+
+## 0x03 Create our first Systemd-nspwan container
 
 ### 1. Create a folder for the container
 
@@ -93,10 +123,21 @@ In this step we have to install the base linux filesystem in the container. Here
 
 #### 2.1 Get the installation script
 
-First install the Arch Linux community maintained installation script in WSL
+First install the Arch Linux community maintained installation script in WSL. Different package managers use different installation commands.
 
 ```Bash
-sudo pacman -S arch-install-scripts
+# Arch Linux
+sudo pacman -Syyu arch-install-scripts
+# Debian buster or higher/Ubuntu 18.04LTS or higher
+sudo apt update
+sudo apt install arch-install-scripts
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+# Fedora
+sudo dnf install arch-install-scripts
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+# 
 ```
 
 #### 2.2 Installing Arch Linux to container
