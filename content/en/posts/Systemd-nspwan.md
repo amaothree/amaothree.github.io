@@ -10,18 +10,9 @@ tags:
 
 ## 0x00 Introduction
 
-This tutorial will describe how to create multiple isolated containers in Linux and run multiple Jenkins in them using Systemd-nspwan container technology.
+This tutorial will describe how to create multiple isolated containers in Linux and run multiple Jenkins in them using Systemd-nspawn container technology.
 
 <!--more-->
-
-I also write an executable script to help you learning the totural.
-You can download and run it:
-
-```bash
-curl -o totural.sh https://gist.githubusercontent.com/amaothree/d8bac64e5225b15db84aaf8e3aa6e08d/raw/fdff92ffddac8626584ad823a3b01ce0795c9f4a/totural.
-chmod +x ./totural.sh
-./totural.sh
-```
 
 ## 0x01 Background
 
@@ -42,7 +33,7 @@ Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux bin
 
 Systemd is the name of a set of system components under the Linux operating system, and it provides the functionality to manage systems and services.
 
-### Systemd-nspwan
+### Systemd-nspawn
 
 Systemd-nspawn is a container tool in systemd. It can be used to run commands or operating systems in a lightweight namespace container.
 
@@ -50,7 +41,7 @@ Compared to Docker, Systemd-nspawn can only do process isolation (the feature of
 
 ### Jenkins
 
-An famours open source automation server. With the help of many plugins, Jenkins can help developers automate the building and deploying of software projects.
+An famous open source automation server. With the help of many plugins, Jenkins can help developers automate the building and deploying of software projects.
 
 ## 0x02 Preparation
 
@@ -77,7 +68,7 @@ You can run a modern linux distribution such as Ubuntu, Fedora or Arch Linux in 
 
 #### Or If you using Windows 10 Version 1903 or higher
 
-You can install **WSL2** (WSL 1 is not work in this totural).
+You can install **WSL2** (WSL 1 is not work in this tutorial).
 
 And for details on how to install WSL2, please read [Microsoft's official documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
@@ -103,7 +94,7 @@ Once installed in WSL2 you can start a "Genie mode" WSL shell directly in Powers
 
 ### 1. Create a folder for the container
 
-From the host's view, Systemd-nspwan's containers are just folders by folders. This is because Systemd-nspwan is a lightweight namespace virtualization technology. Similar to the chroot command, but more powerful, it completely virtualizes the file system hierarchy, process tree, various IPC subsystems, and hosts and domains.
+From the host's view, Systemd-spawn's containers are just folders by folders. This is because Systemd-nspawn is a lightweight namespace virtualization technology. Similar to the chroot command, but more powerful, it completely virtualizes the file system hierarchy, process tree, various IPC subsystems, and hosts and domains.
 
 Next we create a folder in our home directory to hold the containers we will create later and a folder for the first container.
 
@@ -124,18 +115,16 @@ In this step we have to install the base linux filesystem in the container. Here
 #### 2.1 Get the installation script
 
 First install the Arch Linux community maintained installation script in WSL. Different package managers use different installation commands.
+> Although Debian and Ubuntu still provide this package we need but it lack the necessary binary file. These users can check out my [another tutorial](https://www.katacoda.com/amaothree/scenarios/nspwan) to learn how to install debian into a container.
 
 ```Bash
 # Arch Linux
 sudo pacman -Syyu arch-install-scripts
-# Debian buster or higher/Ubuntu 18.04LTS or higher
-sudo apt update
-sudo apt install arch-install-scripts
+
 # Fedora
 sudo dnf install arch-install-scripts
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
-# 
 ```
 
 #### 2.2 Installing Arch Linux to container
@@ -148,11 +137,11 @@ sudo pacstrap -i -c ./Container1/ base
 
 #### 2.3 Creating symbolic links for container
 
-For different use cases, Systemd has designed several different management tools for nspwan containers. We will use the *machinectl* tool, which requires us to create containers in /var/lib/machines/, but a better solution is to use symbolic links.
+For different use cases, Systemd has designed several different management tools for nspawn containers. We will use the *machinectl* tool, which requires us to create containers in /var/lib/machines/, but a better solution is to use symbolic links.
 > Note: Do not use relative paths to create symbolic links, use absolute paths instead.
 
-`sudo ln -s /home/usename/MyContainers/Container1/ /var/lib/machines/`
-> Here *usename* should be replaced with your linux username.  
+`sudo ln -s /home/username/MyContainers/Container1/ /var/lib/machines/`
+> Here *username* should be replaced with your linux username.  
 > If you are using the root login, then the path to the home directory is /root.
 
 Check if linked successfully
@@ -332,3 +321,13 @@ You can check the progress with `machinectl list-transfers` and cancel with `mac
 
 Thanks for your reading.
 > Easter egg for you. If you really follow the commands. Try to run `sl` in Container1.
+
+## 0x06 Quiz
+
+I have prepared a quiz that you can use to check if you have understood the content of this section.
+
+```bash
+curl -L -o totural.sh https://gist.github.com/amaothree/d8bac64e5225b15db84aaf8e3aa6e08d/raw
+chmod +x ./totural.sh
+./totural.sh
+```
