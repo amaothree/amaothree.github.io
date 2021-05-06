@@ -34,19 +34,21 @@ tags:
    ![](/images/回到Windows，让你的powershell更好看且好用/1.2.png)
 
 3. 关于这个配置文件的详细描述以及解释请看[官方中文文档](https://aka.ms/terminal-documentation)，在这一步我就简单介绍一下怎么配置字体，配色。如果你对配置文件敏感，你一眼就能看出，Windows Terminal是可以对不同的shell单独进行配置的，你可以给powershell，bash，cmd分别设置不同的配色字体等等。在`profiles`这一list下有不同的profile块，往往默认第一块应当针对Powershell的。这里放出我头图中的针对powershell的配置：
-   ```json
-    {
-            // Make changes here to the powershell.exe profile
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "name": "Windows PowerShell",
-            "commandline": "powershell.exe",
-            "fontFace": "Source Code Pro",
-            "colorScheme" : "One Half Dark",
-            "fontSize": 10,
-            "hidden": false
-        },
-   ```
-   以我头图那样为例。我使用的是[官方提供的9大配色方案](https://docs.microsoft.com/zh-cn/windows/terminal/customize-settings/color-schemes)之一的“One Half Dark”，在linux时，我是Solarized配色的忠实粉丝，但是回到windows时，我发现Solarized的灰色字体有点儿看不清了，于是换成更好一点儿的One Half配色了。字体和字号，按照我的样例，分别修改fontFace和fontSize的值就好了。这个因人而异。
+```json
+   {
+         // Make changes here to the powershell.exe profile
+         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+         "name": "Windows PowerShell",
+         "commandline": "powershell.exe",
+         "fontFace": "Cascadia Mono PL",
+         "colorScheme" : "One Half Dark",
+         "fontSize": 10,
+         "hidden": false
+      },
+```
+以我头图那样为例。我使用的是[官方提供的9大配色方案](https://docs.microsoft.com/zh-cn/windows/terminal/customize-settings/color-schemes)之一的“One Half Dark”，在linux时，我是Solarized配色的忠实粉丝，但是回到windows时，我发现Solarized的灰色字体有点儿看不清了，于是换成更好一点儿的One Half配色了。字体和字号，按照我的样例，分别修改fontFace和fontSize的值就好了。这个因人而异。
+> 在这里推荐微软最新设计的编程与终端字体（Cascadia Code/Mono），显示效果比Source Code Pro好很多，最新的Win10已经自带了，如果没有可以去[Github](https://github.com/microsoft/cascadia-code)下载安装.
+
 
 4. 由于Window Terminal是动态的读取配置文件，所以你的每一次修改是及时生效的，无需重启应用，这样非常方便你去修改字号这样的配置。你可以一边vscode一遍terminal的去调整。
 
