@@ -1,6 +1,6 @@
 <!doctype html><html dir=ltr lang=zh data-theme><head><title>Amao Three
 |
-回到Windows，最全教程让你的Powershell更好看且好用(2021版)</title><meta charset=utf-8><meta name=generator content="Hugo 0.84.4"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content="
+回到Windows，最全教程让你的Powershell更好看且好用(2021版)</title><meta charset=utf-8><meta name=generator content="Hugo 0.85.0"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=description content="
       天下有大勇者，卒然临之而不惊，无故加之而不怒；此其所挟持者甚大，而其志甚远也。--苏轼
 
 
@@ -38,7 +38,7 @@ animated fadeInDown"><div class=post-content><div class=post-title><h1>回到Win
  scoop update
  # 安装
  scoop install scoop-completion
-</code></pre><p>为了让自动补全工具能每次打开powershell都有效，我们需要将其写进powershell的配置文件中（有点儿像bash的.bashrc文件。不是Windows Terminal的配置文件），</p><pre><code> # 首先检测有没有配置文件并生成profile文件
+</code></pre><p>为了让自动补全工具能每次打开powershell都有效，我们需要将其写进powershell的配置文件中（有点儿像bash的.bashrc文件，zsh的.zshrc。注意这里不是Windows Terminal的json配置文件），</p><pre><code> # 首先检测有没有配置文件并生成profile文件
  if (!(Test-Path $profile)) { New-Item -Path $profile -ItemType &quot;file&quot; -Force }
  # 查看配置文件路径（在哪儿）
  $profile
@@ -53,7 +53,7 @@ scoop install oh-my-posh3
     oh-my-posh --config $($_.FullName) --pwd $PWD
     Write-Host <span style=color:#e6db74>&#34;&#34;</span>
 }
-</code></pre></div><p>查看选择一款自己喜欢的主题，下面以aliens.omp为例子。打开powershell配置文件(通过命令行输入<code>$profile</code>查找配置文件所在目录)，<strong>加入</strong>下面几行：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell> Import-Module posh-git
+</code></pre></div><p>这里如果出现方块乱码，就说明你的字体不是Nerd Font。oh-my-posh3的设计基于Nerd Font，请去<a href=https://www.nerdfonts.com/>这里</a>下载任意一款你喜欢的Nerd Font。</p><blockquote><p>Nerd Font是一类添加了更多字符画的字体。常用字体都有人为其打Nerd补丁。均可以在Nerd Font网站中找到。我使用的是Caskaydia Cove Nerd Font，这是针对微软自己的编程字体Cascadia Font进行补丁的Nerd Font。很好看我很喜欢。</p></blockquote><p>查看选择一款自己喜欢的主题，下面以aliens.omp为例子。打开powershell配置文件(通过命令行输入<code>$profile</code>查找配置文件所在目录)，<strong>加入</strong>下面几行：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell> Import-Module posh-git
  oh-my-posh --init --shell pwsh --config <span style=color:#e6db74>&#34;</span>$(scoop prefix oh-my-posh3)<span style=color:#e6db74>\themes\aliens.omp.json&#34;</span> | Invoke-Expression <span style=color:#75715e>#这里对应你选好的主题名</span>
 </code></pre></div></li><li><p>输入“<code>. $PROFILE</code>”或者重启Terminal，刷新shell。</p></li></ol><h2 id=0x04-细节继续优化>0x04 细节继续优化</h2><p>完成上面三大步，我们就有了好用的terminal，美观的shell和高效的包管理器。接下来我们再继续往细节上优化。</p><h3 id=类似zsh的历史命令补全>类似zsh的历史命令补全</h3><p>如果你有用过zsh或者posh，你想回到某一次pacman的安装命令，你就可以只敲<code>sudo pacman -S</code>后通过上下方向键浏览以已经输入的字符串为前缀的历史命令，这样就可以方便快速的寻找我们之前执行过的命令。</p><p><img src=/images/%E5%9B%9E%E5%88%B0Windows%EF%BC%8C%E8%AE%A9%E4%BD%A0%E7%9A%84powershell%E6%9B%B4%E5%A5%BD%E7%9C%8B%E4%B8%94%E5%A5%BD%E7%94%A8/4.1.png alt></p><p>这个功能随着powershell的更新已经在5.0版本后内置了（通过<code>$PSVersionTable</code>查看当前powershell版本），但是没有默认开启，我们只需要往配置文件中<strong>加入</strong>如下信息开启它就好了。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-powershell data-lang=powershell>Import-Module PSReadLine
 
