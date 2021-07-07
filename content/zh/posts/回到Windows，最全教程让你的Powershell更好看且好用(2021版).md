@@ -142,24 +142,19 @@ tags:
 
    保存重进一下terminal就成。
 
-## 0x03 安装Powershell之zsh。 Posh与oh-my-posh
+## 0x03 安装Powershell之zsh。 oh-my-posh3
 
-很多在Linux或者mac下使用过zsh的开发者都对其赞不绝口甚至再也无法没有他了，那么powershell作为一款设计上远超shell的命令行，有没有类似的产品呢？
+很多在Linux或者mac下使用过zsh的开发者都对其赞不绝口甚至再也无法没有他了，尤其是oh-my-zsh项目做到了开箱即好用，那么同样的powershell作为一款设计上远超bash的命令行，有没有类似的产品呢？
 
-有！那就是[Posh](https://github.com/dahlbyk/posh-git)!
-
-![](/images/回到Windows，让你的powershell更好看且好用/3.1.png)
-
-但是实际上Posh和Zsh定位于功能完全不一样。Posh的设计初衷只是为了设计出能像zsh（oh-my-zsh）那样的能够反应git信息的一个工具。而且你看看上图，真的是有点儿丑哈。不过你zsh没了oh-my-zsh不也是丑嘛，所以说，便有另一位强人设计出了posh的强化方案，[oh-my-posh](https://ohmyposh.dev/)!
+有！那就是[Oh-my-posh](https://ohmyposh.dev/)!
 
 ![](/images/回到Windows，让你的powershell更好看且好用/3.2.png)
 
-那现在我们就通过scoop安装posh和oh-my-posh，并且进行配置。
+那现在我们就通过scoop安装oh-my-posh3，并且进行配置。
 
-1. 通过scoop安装posh以及oh-my-posh.
+1. 通过scoop安装oh-my-posh3.
 
    ```powershell
-   # 因为posh是oh-my-posh的依赖，因此安装oh-my-posh会自动安装posh
    scoop install oh-my-posh3
    ```
 
