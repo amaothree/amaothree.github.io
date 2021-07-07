@@ -125,7 +125,7 @@ tags:
     scoop install scoop-completion
    ```
 
-   为了让自动补全工具能每次打开powershell都有效，我们需要将其写进powershell的配置文件中（有点儿像bash的.bashrc文件。不是Windows Terminal的配置文件），
+   为了让自动补全工具能每次打开powershell都有效，我们需要将其写进powershell的配置文件中（有点儿像bash的.bashrc文件，zsh的.zshrc。注意这里不是Windows Terminal的json配置文件），
 
    ```
     # 首先检测有没有配置文件并生成profile文件
@@ -175,6 +175,9 @@ tags:
         Write-Host ""
     }
     ```
+
+    这里如果出现方块乱码，就说明你的字体不是Nerd Font。oh-my-posh3的设计基于Nerd Font，请去[这里](https://www.nerdfonts.com/)下载任意一款你喜欢的Nerd Font。
+    > Nerd Font是一类添加了更多字符画的字体。常用字体都有人为其打Nerd补丁。均可以在Nerd Font网站中找到。我使用的是Caskaydia Cove Nerd Font，这是针对微软自己的编程字体Cascadia Font进行补丁的Nerd Font。很好看我很喜欢。
 
     查看选择一款自己喜欢的主题，下面以aliens.omp为例子。打开powershell配置文件(通过命令行输入`$profile`查找配置文件所在目录)，**加入**下面几行：
 
